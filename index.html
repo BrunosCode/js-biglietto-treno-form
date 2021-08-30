@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ticket Price Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Get your ticket</h1>
+            <div class="form">
+                <label for="user-age">How old are you? <span id="age-error" class="error"></span></label>
+                <input type="number" name="user-age" id="user-age">
+                <label for="distance">How far do you want to travel (km)? <span id="distance-error" class="error"></span></label>
+                <input type="number" name="distance" id="distance">
+                <button id="submitBtn">Submit</button>
+            </div>
+            <div id="ticket">
+                <h2>Your ticket cost: <span id="ticket-price"></span></h2>
+                <p id="discount"></p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
