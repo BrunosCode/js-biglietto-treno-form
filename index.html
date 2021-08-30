@@ -18,9 +18,9 @@
             <h1>Get your ticket</h1>
             <div class="form">
                 <div>
-                    <label for="user-name">Name <span id="age-error" class="error"></span></label>
+                    <label for="user-name">Name <span id="name-error" class="error"></span></label>
                     <input type="text" name="user-name" id="user-name">
-                    <label for="user-age">Surname <span id="age-error" class="error"></span></label>
+                    <label for="user-age">Surname <span id="surname-error" class="error"></span></label>
                     <input type="text" name="user-surname" id="user-surname">
                     <label for="user-age">Age <span id="age-error" class="error"></span></label>
                     <input type="number" name="user-age" id="user-age">
@@ -33,10 +33,11 @@
             </div>
             <div id="ticket" class="l-container">
                 <h3>Your Ticket</h3>
+                <h5>Passenger: <span id="full-name"></span></h5>
                 <p>Price: <span id="ticket-price"></span></p>
                 <p>Discount: <span id="discount"></span></p>
                 <p>Carriage: <span id="carriege"></span></p>
-                <p>CP Code: <span id="discount"></span></p>
+                <p>CP Code: <span id="cp-code"></span></p>
             </div>
         </div>
     </main>
