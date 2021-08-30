@@ -9,81 +9,77 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
+.main {
+    background-color: teal;
+    padding: 2rem;
+    min-height: 100vh;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
 }
 
 .container {
-    flex-grow: 1;
-    background-color: aliceblue;
-    margin: .5rem;
+    background-color: white;
     padding: 1rem;
+    margin: 1rem 0;
     border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    
 }
+
+.title {
+    text-align: center;
+    color: white;
+}
+
 .form {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin: 1rem .5rem;
 }
-@media screen and (min-width: 500px) {
-    .form {
-        max-width: 600px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "label input"
-        "label input"
-        "label input"
-        "button button";
-        margin: 1rem auto;
-    }
-}
-label {
-    display: block;
+.form__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: .5rem 0;
-    font-weight: 700;
-    justify-self: flex-start;
-    align-self: center;
 }
-input {
-    border: none;
-    border-bottom: 2px solid darkcyan;
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    margin: .5rem 0;
-    text-align: center;
+
+/* .trainList {
+    list-style: none;
 }
-button {
-    grid-area: button;
+.trainList__train {
+    border-top: solid 1px teal;
+    border-bottom: solid 1px teal;
+    display: flex;
+    flex-direction: row;
+} */
+
+.ticket {
+    margin: 1rem auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.ticket__col {
+    padding: 1rem;
+    flex-grow: 1;
+}
+.ticket__data {
+    margin: .25rem 0;
+}
+
+.btn {
+    background-color: turquoise;
+    color: #013838;
     padding: .5rem 1rem;
-    margin: 1rem auto 0;
-    border-radius: 1rem;
     border: none;
-    width: 100%;
-    max-width: 300px;
-    background-color: darkcyan;
-    color: white;
-    font-weight: 700;
+    box-shadow: 1px 2px teal;
+    border-radius: 1rem;
     text-transform: uppercase;
-    cursor: pointer;
+    font-weight: 700;
+}
+.btn:hover {
+    box-shadow: none;
+    background-color: teal;
+    color: white;
 }
 
 .error {
     color: red;
-}
-
-#ticket-price {
-    color: darkcyan;
 }
