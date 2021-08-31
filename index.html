@@ -34,42 +34,20 @@
                         <span id="age-error" class="error"></span>
                         <input type="number" name="user-age" id="user-age" min="1" max="135">
                     </label>
-                    <!-- <label for="from">From
-                        <select name="from" id="from">
-                            <option value="Milan">Milan</option>
-                        </select>
-                    </label>
-                    <label for="to">To
-                        <select name="to" id="to">
-                            <option value="Paris">Paris</option>
-                            <option value="Berlin">Berlin</option>
-                        </select>
-                    </label>
-                    <label for="date">When
-                        <input type="date" name="date" id="date">
-                    </label> -->
-                    <label for="distance">How far do you want to travel (km)? 
+                    <label for="distance">Distance (km)? 
                         <span id="distance-error" class="error"></span>
                         <input type="number" name="distance" id="distance" min="1">
                     </label>
                 </div> 
                 <div class="form__row">
-                    <button id="submitBtn" class="btn">Search</button>
+                    <button id="submitBtn" class="btn">Book</button>
+                    <button id="resetBtn" class="btn">Reset</button>
                 </div>
             </div>
         </section>
 
-        <!-- <section>
-            <h2 class="title">Available trains</h2>
-            <ul class="container trainList">
-                <li class="trainList__train">
-
-                </li>
-            </ul>
-        </section> -->
-
         <h2 class="title">Your Ticket</h2>
-        <div id="ticket" class="container ticket">
+        <div id="ticket" class="container ticket hide">
             <div class="ticket__col">
                 <h3 class="ticket__data">Passenger: <span id="full-name"></span></h3>
                 <p class="ticket__data">CP Code: <span id="cp-code"></span></p>
