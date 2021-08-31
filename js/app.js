@@ -81,7 +81,7 @@ const printTicket = () => {
     document.getElementById('cp-code').innerHTML = Math.floor(Math.random() * 10000) + 90000;
     
     // 7. Show ticket
-    document.getElementById('ticket').classList.toggle("hide");
+    document.getElementById('ticket').classList.remove("hide");
 }
         
 
@@ -95,7 +95,7 @@ const reset = () => {
     document.getElementById('distance').value = "";
 
     // 9. Hide ticket
-    document.getElementById('ticket').classList.toggle("hide");
+    document.getElementById('ticket').classList.add("hide");
 }
 
 document.getElementById('resetBtn').addEventListener('click', reset);
