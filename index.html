@@ -18,28 +18,28 @@
             <h2 class="title">Book your travel</h2>
             <div class="container form">
                 <div class="form__row">
-                    <label for="user-name">Name 
+                    <div class="form__input">
+                        <label for="user-name">Name</label>
                         <span id="name-error" class="error"></span>
                         <input type="text" name="user-name" id="user-name">
-                    </label>
-                    
-                    <label for="user-age">Surname 
+                    </div>
+                    <div class="form__input">
+                        <label for="user-age">Surname</label>
                         <span id="surname-error" class="error"></span>
                         <input type="text" name="user-surname" id="user-surname">
-                    </label>
-                    
-                </div>
-                <div class="form__row">
-                    <label for="user-age">Age 
+                    </div>
+                    <div class="form__input">
+                        <label for="user-age">Age</label>
                         <span id="age-error" class="error"></span>
                         <input type="number" name="user-age" id="user-age" min="1" max="135">
-                    </label>
-                    <label for="distance">Distance (km)? 
+                    </div>
+                    <div class="form__input">
+                        <label for="distance">Distance (km)</label>
                         <span id="distance-error" class="error"></span>
                         <input type="number" name="distance" id="distance" min="1">
-                    </label>
-                </div> 
-                <div class="form__row">
+                    </div>
+                </div>
+                <div class="form__btns">
                     <button id="submitBtn" class="btn">Book</button>
                     <button id="resetBtn" class="btn btn--red">Reset</button>
                 </div>

@@ -29,36 +29,47 @@ body {
     color: white;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
 .form__row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: .5rem 0;
+    flex-wrap: wrap;
+    margin: 1rem 0;
 }
-
-/* .trainList {
-    list-style: none;
-}
-.trainList__train {
-    border-top: solid 1px teal;
-    border-bottom: solid 1px teal;
+.form__btns {
     display: flex;
     flex-direction: row;
-} */
+    justify-content: center;
+    margin: 1rem 0;
+}
+.form__btns .btn:first-child {
+    margin-right: 2rem;
+}
+.form__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .25rem 0;
+}
+.form__input > * {
+    margin: .125rem 0;
+}
+.form__input input {
+    text-align: center;
+}
 
 .ticket {
     margin: 1rem auto;
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
 }
 .ticket__col {
-    padding: 1rem;
+    padding: 0 1rem;
     flex-grow: 1;
+    text-align: center;
 }
 .ticket__data {
     margin: .25rem 0;
